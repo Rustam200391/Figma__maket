@@ -1,4 +1,4 @@
-/* Общие стили для хедера */
+/* style for header*/
 .header {
   background-image: url("../../assets/pictures/Rectangle41.png");
   background-size: cover;
@@ -10,44 +10,43 @@
   align-items: center;
 }
 
-/* Контейнер для внутренних элементов */
 .header-inner {
   display: flex;
-  justify-content: space-between; /* Пространство между контейнерами */
-  align-items: center; /* Вертикальное выравнивание */
+  justify-content: space-between; /* gap */
+  align-items: center; /* verticale - align */
   width: 100%;
 }
 
-/* Стили для логотипа */
+/* style for logo */
 .logo-header img {
-  max-height: 80px; /* Ограничьте высоту логотипа */
+  max-height: 80px;
 }
 
-/* Список меню */
+/* list menu */
 .list-header {
   margin: 40px;
-  display: flex; /* Flexbox для выравнивания в строку */
-  justify-content: space-evenly; /* Равное расстояние между элементами */
-  align-items: center; /* Вертикальное выравнивание */
-  width: 100%; /* Растянуть на всю ширину контейнера */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; /* container width */
 }
 
 .list-header div {
   font-size: 16px;
-  color: #fff; /* Цвет текста */
-  cursor: pointer; /* Указатель на ссылку */
+  color: #fff; /* text color */
+  cursor: pointer; /* link cursor */
   text-align: center;
 }
 
 /* Стили для телефона */
 .phone-header {
   display: flex;
-  align-items: center; /* Выравнивание иконки и текста */
+  align-items: center; /* text-align & icon-align*/
   gap: 10px;
 }
 
 .phone-header img {
-  max-height: 24px; /* Ограничьте высоту иконки */
+  max-height: 24px; /* height icon */
 }
 
 .phone-header p {
