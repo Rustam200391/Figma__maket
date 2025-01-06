@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-/* Стили для телефона */
+/* style for phone */
 .phone-header {
   display: flex;
   align-items: center; /* text-align & icon-align*/
