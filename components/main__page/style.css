@@ -1,0 +1,72 @@
+/* Общие стили для хедера */
+.header {
+  background-image: url("../../assets/pictures/Rectangle41.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 770px;
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Контейнер для внутренних элементов */
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* Пространство между контейнерами */
+  align-items: center; /* Вертикальное выравнивание */
+  width: 100%;
+}
+
+/* Стили для логотипа */
+.logo-header img {
+  max-height: 80px; /* Ограничьте высоту логотипа */
+}
+
+/* Список меню */
+.list-header {
+  margin: 40px;
+  display: flex; /* Flexbox для выравнивания в строку */
+  justify-content: space-evenly; /* Равное расстояние между элементами */
+  align-items: center; /* Вертикальное выравнивание */
+  width: 100%; /* Растянуть на всю ширину контейнера */
+}
+
+.list-header div {
+  font-size: 16px;
+  color: #fff; /* Цвет текста */
+  cursor: pointer; /* Указатель на ссылку */
+  text-align: center;
+}
+
+/* Стили для телефона */
+.phone-header {
+  display: flex;
+  align-items: center; /* Выравнивание иконки и текста */
+  gap: 10px;
+}
+
+.phone-header img {
+  max-height: 24px; /* Ограничьте высоту иконки */
+}
+
+.phone-header p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.number {
+  width: 126px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Larsseit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
