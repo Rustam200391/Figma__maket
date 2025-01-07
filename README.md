@@ -1,1 +1,1 @@
-<i>New project collaboration with @Elnur
+<i>New project collaboration with <i>@</i>Elnur
