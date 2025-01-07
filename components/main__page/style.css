@@ -79,8 +79,8 @@
 
 .header-content {
   margin-top: 220px;
-  text-align: center; /* Центрирование текста внутри */
-  color: white; /* Цвет текста */
+  text-align: center; /* text-inner*/
+  color: white; /* color */
 }
 
 .header-content div {
@@ -95,15 +95,26 @@
 }
 
 .header-content button {
-  width: 120px;
-  height: 40px;
-  background-color: #fff;
-  color: #000;
-  border: none;
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   font-family: Larsseit;
   font-size: 16px;
   font-weight: 700;
-  margin: 0 10px;
+  width: 167px;
+  height: 52px;
+  opacity: 0px !important;
+}
+
+.header-content button:first-child {
+  background-color: #44a1e7;
+}
+
+.header-content button:nth-child(2) {
+  border: 2px solid #44a1e7;
+  background-color: #030236;
+}
+.header-footer {
+  margin-top: 100px;
+  color: #fff;
 }
