@@ -78,5 +78,32 @@
 }
 
 .header-content {
-  color: white;
+  margin-top: 220px;
+  text-align: center; /* Центрирование текста внутри */
+  color: white; /* Цвет текста */
+}
+
+.header-content div {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.header-content button {
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Larsseit;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px;
 }
