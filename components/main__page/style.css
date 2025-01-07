@@ -1,4 +1,10 @@
 /* style for header*/
+@font-face {
+  font-family: "Larsseit";
+  src: url("../../assets/fonts/Larsseit/larsseit_regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 .header {
   background-image: url("../../assets/pictures/Rectangle41.png");
   background-size: cover;
@@ -62,7 +68,7 @@
   opacity: 0px;
   font-family: Larsseit;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 22.4px;
   letter-spacing: 0.05em;
   text-align: left;
