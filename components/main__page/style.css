@@ -155,7 +155,7 @@ body {
 .grey {
   flex: 3; /* Occupies more width */
   display: flex; /* Align sub-containers in a row */
-  height: 270px;
+  height: 310px;
   gap: 20px; /* Space between sub-containers */
   padding: 10px; /* Inner padding for spacing */
   border-radius: 5px;
