@@ -118,3 +118,85 @@
   margin-top: 100px;
   color: #fff;
 }
+/* Main container */
+/* General styles */
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* Main container */
+.main-content-block {
+  display: flex;
+  width: 100%;
+  margin: 50px auto; /* Center horizontally with top margin */
+  position: relative; /* For layering */
+}
+
+/* First block (number image) */
+.first__block-number {
+  position: absolute; /* Position behind .grey block */
+  top: -15%;
+  left: 10%; /* Horizontal position */
+  transform: translate(0, -50%); /* Center vertically */
+  z-index: 1; /* Lower layer */
+  opacity: 0.8; /* Slight transparency for the background */
+}
+
+.first__block-number img {
+  width: auto; /* Keep original width */
+  height: auto; /* Keep original height */
+  display: block;
+}
+
+/* Grey block with two sub-containers */
+.grey {
+  flex: 3; /* Occupies more width */
+  display: flex; /* Align sub-containers in a row */
+  height: 270px;
+  gap: 20px; /* Space between sub-containers */
+  padding: 10px; /* Inner padding for spacing */
+  border-radius: 5px;
+  position: relative;
+  z-index: 2; /* Higher layer */
+}
+
+/* Left sub-container (overlay image) */
+.grey-left {
+  flex: 2; /* Smaller width than .grey-right */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  background-color: transparent; /* Transparent to see underlying image */
+  padding: 10px;
+  position: relative;
+  z-index: 3; /* Highest layer */
+}
+
+.grey-left img {
+  width: 100%; /* Matches the container's width */
+  height: 100%; /* Matches the container's height */
+  object-fit: contain; /* Keeps aspect ratio */
+  opacity: 0.9; /* Slight transparency for blending effect */
+}
+
+/* Right sub-container (text block) */
+.grey-right {
+  flex: 3; /* Slightly larger width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6d8db; /* Slightly darker grey */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.grey-right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
