@@ -199,7 +199,6 @@ body {
   height: 530px; /* Set block height */
   display: flex; /* Center content inside */
   justify-content: center; /* Horizontally center text */
-  align-items: center; /* Vertically center text */
   border-radius: 5px; /* Rounded corners */
   pointer-events: auto; /* Allow interaction with these blocks */
 }
@@ -211,6 +210,7 @@ body {
 }
 
 .overlay-item:nth-child(2) {
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
 }
