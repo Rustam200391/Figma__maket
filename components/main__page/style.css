@@ -5,6 +5,20 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../assets/fonts/inter/Inter-Regular.otf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   background-image: url("../../assets/pictures/Rectangle41.png");
   background-size: cover;
@@ -128,78 +142,100 @@ body {
 }
 
 /* Main container */
+/* Main content block */
+/* Main content block */
 .main-content-block {
-  display: flex;
-  width: 100%;
+  display: flex; /* Align child elements in a row */
+  width: 100%; /* Full width */
   margin: 50px auto; /* Center horizontally with top margin */
   position: relative; /* For layering */
 }
 
 /* First block (number image) */
 .first__block-number {
-  position: absolute; /* Position behind .grey block */
-  top: -15%;
-  left: 10%; /* Horizontal position */
-  transform: translate(0, -50%); /* Center vertically */
+  flex: 1; /* Take 1/3 of the width */
+  background: #ffffff; /* White background */
+  display: flex; /* To center content */
+  justify-content: center; /* Horizontally center image */
+  align-items: flex-start; /* Vertically center image */
+  position: relative; /* For layering */
   z-index: 1; /* Lower layer */
-  opacity: 0.8; /* Slight transparency for the background */
 }
 
+/* Image inside the first block */
 .first__block-number img {
   width: auto; /* Keep original width */
   height: auto; /* Keep original height */
   display: block;
+  opacity: 0.8; /* Slight transparency */
 }
 
-/* Grey block with two sub-containers */
-.grey {
-  flex: 3; /* Occupies more width */
-  display: flex; /* Align sub-containers in a row */
-  height: 310px;
-  gap: 20px; /* Space between sub-containers */
-  padding: 10px; /* Inner padding for spacing */
-  border-radius: 5px;
-  position: relative;
+/* Second block (grey background) */
+.second__block-grey {
+  flex: 2; /* Take 2/3 of the width */
+  background: #f0f1f4; /* Grey background */
+  height: 770px; /* Fixed height */
+  position: relative; /* For layering */
+  z-index: 1; /* Lower layer */
+}
+
+/* Overlay block */
+.overlay-block {
+  display: flex; /* Align items in a row */
+  position: absolute; /* Position over .first__block-number and .second__block-grey */
+  top: 0;
+  left: 0;
+  width: 90%; /* Full width of parent */
+  height: 770px; /* Same height as .second__block-grey */
   z-index: 2; /* Higher layer */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  pointer-events: none; /* Prevent interaction with this block */
 }
 
-/* Left sub-container (overlay image) */
-.grey-left {
-  flex: 2; /* Smaller width than .grey-right */
+/* Overlay items */
+.overlay-item {
+  flex: 1; /* Equal width for both blocks */
+  height: 530px; /* Set block height */
+  display: flex; /* Center content inside */
+  justify-content: center; /* Horizontally center text */
+  align-items: center; /* Vertically center text */
+  border-radius: 5px; /* Rounded corners */
+  pointer-events: auto; /* Allow interaction with these blocks */
+}
+
+.overlay-item:first-child {
+  background-image: url("../../assets/pictures/about-bg.jpeg");
+  background-size: cover;
+  opacity: 1;
+}
+
+.overlay-item:nth-child(2) {
   display: flex;
-  justify-content: center; /* Center image horizontally */
-  align-items: center; /* Center image vertically */
-  background-color: transparent; /* Transparent to see underlying image */
-  padding: 10px;
-  position: relative;
-  z-index: 3; /* Highest layer */
+  flex-direction: column;
 }
 
-.grey-left img {
-  width: 100%; /* Matches the container's width */
-  height: 100%; /* Matches the container's height */
-  object-fit: contain; /* Keeps aspect ratio */
-  opacity: 0.9; /* Slight transparency for blending effect */
+.overlay-item .title {
+  color: #44a1e7;
 }
 
-/* Right sub-container (text block) */
-.grey-right {
-  flex: 3; /* Slightly larger width */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #d6d8db; /* Slightly darker grey */
-  padding: 20px;
-  border-radius: 5px;
+.overlay-item h2 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
-.grey-right p {
+.overlay-item .text {
+  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  color: #333;
-  margin: 0;
-  text-align: center;
-}
-
-.first__number-down {
+  line-height: 27.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4f4f4f;
 }
