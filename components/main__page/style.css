@@ -198,7 +198,7 @@ body {
   flex: 1; /* Equal width for both blocks */
   height: 530px; /* Set block height */
   display: flex; /* Center content inside */
-  justify-content: center; /* Horizontally center text */
+  justify-content: space-around; /* Horizontally center text */
   border-radius: 5px; /* Rounded corners */
   pointer-events: auto; /* Allow interaction with these blocks */
 }
