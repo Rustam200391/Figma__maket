@@ -250,3 +250,25 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+/* Основной блок */
+.main-block {
+  height: 150px; /* Высота Hug */
+  top: 1660px; /* Смещение сверху */
+  left: 80px; /* Смещение слева */
+  display: flex; /* Flexbox для внутреннего выравнивания */
+  justify-content: space-between; /* Равное распределение пространства */
+  gap: 0px; /* Отступы между внутренними блоками */
+  opacity: 0; /* Прозрачность */
+}
+
+/* Внутренние блоки */
+.inner-block {
+  height: 150px; /* Высота Hug */
+  opacity: 0; /* Прозрачность */
+  color: #030236;
+}
+
+.inner-block:first-child {
+  font-family: Poppins;
+}
