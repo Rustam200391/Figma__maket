@@ -206,7 +206,7 @@ body {
 .overlay-item:first-child {
   background-image: url("../../assets/pictures/about-bg.jpeg");
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .overlay-item:nth-child(2) {
