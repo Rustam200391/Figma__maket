@@ -254,8 +254,7 @@ body {
 /* Основной блок */
 .main-block {
   height: 150px; /* Высота Hug */
-  top: 1660px; /* Смещение сверху */
-  left: 80px; /* Смещение слева */
+  padding: 20px;
   display: flex; /* Flexbox для внутреннего выравнивания */
   justify-content: space-between; /* Равное распределение пространства */
   gap: 0px; /* Отступы между внутренними блоками */
@@ -265,10 +264,36 @@ body {
 /* Внутренние блоки */
 .inner-block {
   height: 150px; /* Высота Hug */
-  opacity: 0; /* Прозрачность */
   color: #030236;
+  background-color: red;
 }
 
 .inner-block:first-child {
   font-family: Poppins;
+}
+
+/* анимация иконки с логотипом в левом верхнем углу хидера */
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#imagename {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Анимация */
+}
+
+/* анимация иконки телефона */
+.phone-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imagephone {
+  width: 20px;
+  height: 150px;
+  cursor: pointer;
+  transition: transform 0.5s ease; /* Плавная анимация трансформации */
 }
