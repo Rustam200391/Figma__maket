@@ -159,7 +159,6 @@ body {
   justify-content: center; /* Horizontally center image */
   align-items: flex-start; /* Vertically center image */
   position: relative; /* For layering */
-  z-index: 1; /* Lower layer */
 }
 
 /* Image inside the first block */
@@ -168,6 +167,8 @@ body {
   height: auto; /* Keep original height */
   display: block;
   opacity: 0.8; /* Slight transparency */
+  position: absolute;
+  z-index: 3;
 }
 
 /* Second block (grey background) */
@@ -176,7 +177,7 @@ body {
   background: #f0f1f4; /* Grey background */
   height: 770px; /* Fixed height */
   position: relative; /* For layering */
-  z-index: 1; /* Lower layer */
+
 }
 
 /* Overlay block */
