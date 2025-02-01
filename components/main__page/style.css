@@ -167,7 +167,7 @@ body {
   width: auto; /* Keep original width */
   height: auto; /* Keep original height */
   display: block;
-  opacity: 0.8; /* Slight transparency */
+  opacity: 0.9; /* Slight transparency */
 }
 
 /* Second block (grey background) */
@@ -258,18 +258,54 @@ body {
   display: flex; /* Flexbox для внутреннего выравнивания */
   justify-content: space-between; /* Равное распределение пространства */
   gap: 0px; /* Отступы между внутренними блоками */
-  opacity: 0; /* Прозрачность */
 }
 
 /* Внутренние блоки */
 .inner-block {
   height: 150px; /* Высота Hug */
   color: #030236;
-  background-color: red;
+  border-left: 1px solid #44a1e7; /* Голубая граница слева */
 }
 
 .inner-block:first-child {
   font-family: Poppins;
+}
+
+.inner-block div:first-child {
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #44a1e7;
+}
+
+.inner-block div:nth-child(2) {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000046;
+}
+
+.inner-block div:nth-child(3) {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4f4f4f;
+}
+
+.inner-block-around:nth-child(2) div:nth-child(2) {
+  padding-bottom: 10px;
 }
 
 /* анимация иконки с логотипом в левом верхнем углу хидера */
